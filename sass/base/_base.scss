@@ -1,0 +1,52 @@
+// #region variables
+:root {
+  --color-primary: #55c57a;
+  --color-primary-light: #7ed56f;
+  --color-primary-dark: #28b485;
+  --color-grey-light-1: #f7f7f7;
+  --color-grey-light-2: #eee;
+  --color-secondary-light: #ffb900;
+  --color-secondary-dark: #ff7730;
+  --color-tertiary-light: #2998ff;
+  --color-tertiary-dark: #5643fa;
+  --color-grey-dark-1: #777;
+  --color-grey-dark-2: #999;
+  --color-grey-dark-3: #333;
+
+  --color-white: #ffffff;
+  --color-black: #000;
+
+  --default-font-size: 1.6rem;
+
+  --shadow-dark: 0 2rem 6rem #00000090;
+  --shadow-light: 0 2rem 3rem #00000009;
+  --btn-shadow: 0rem 0.5rem 1.5rem #00000052;
+}
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+
+// #endregion variables
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  &,
+  body {
+    // to fix the white space on the right of the body
+    overflow-x: hidden;
+  }
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: var(--color-grey-dark-1);
+}

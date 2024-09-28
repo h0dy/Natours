@@ -1,0 +1,128 @@
+:root {
+  --color-primary: #55c57a;
+  --color-primary-light: #7ed56f;
+  --color-primary-dark: #28b485;
+  --color-grey-light-1: #f7f7f7;
+  --color-grey-light-2: #eee;
+  --color-secondary-light: #ffb900;
+  --color-secondary-dark: #ff7730;
+  --color-tertiary-light: #2998ff;
+  --color-tertiary-dark: #5643fa;
+  --color-grey-dark-1: #777;
+  --color-grey-dark-2: #999;
+  --color-grey-dark-3: #333;
+  --color-white: #ffffff;
+  --color-black: #000;
+  --default-font-size: 1.6rem;
+  --shadow-dark: 0 2rem 6rem #00000090;
+  --shadow-light: 0 2rem 3rem #00000009;
+  --btn-shadow: 0rem 0.5rem 1.5rem #00000052;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+html,
+html body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: var(--color-grey-dark-1);
+}
+
+body {
+  padding: 3rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.7)), url("../img/hero.jpg");
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+.header__logo-box {
+  align-self: flex-start;
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+.header__logo {
+  height: 4rem;
+}
+.header__text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.heading-primary {
+  margin-bottom: 7rem;
+}
+
+.heading-primary--main,
+.heading-primary--sub {
+  display: block;
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+
+.heading-primary--main {
+  margin-bottom: 3rem;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+}
+
+.heading-primary--sub {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.75rem;
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 2rem 4rem;
+  font-size: 1.5rem;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  outline: none;
+  box-shadow: var(--btn-shadow);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.4705882353);
+}
+
+.btn:active {
+  transform: translate(-1px);
+  box-shadow: var(--btn-shadow);
+}
+
+.btn--white {
+  background-color: var(--color-white);
+  color: var(--color-grey-dark-1);
+}
+
+/*# sourceMappingURL=style.css.map */
