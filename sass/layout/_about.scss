@@ -1,0 +1,12 @@
+.about-natours {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 20rem;
+  &__about {
+    flex: 0 0 35%;
+  }
+  &__img {
+    flex: 0 0 35%;
+    
+  }
+}
