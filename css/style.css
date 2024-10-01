@@ -154,10 +154,11 @@ body {
 }
 
 .btn, .btn:link, .btn:visited {
+  position: relative;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 2rem 4rem;
-  font-size: 2rem;
+  padding: 1.5rem 3rem;
+  font-size: 1.5rem;
   border-radius: 10rem;
   transition: all 0.2s;
   outline: none;
@@ -392,6 +393,71 @@ body {
   font-weight: 300;
 }
 
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 6rem;
+  padding-left: 9rem;
+  transform: skewX(-12deg);
+}
+.story > * {
+  transform: skewX(12deg);
+}
+.story__shape {
+  width: 15rem;
+  height: 15rem;
+  float: left;
+  border-radius: 50%;
+  shape-outside: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  transform: translateX(-3rem) skewX(12deg);
+  position: relative;
+}
+.story__img {
+  height: 100%;
+  transform: translateX(-4rem) scale(1.4);
+  transition: all 0.5s;
+}
+.story__text {
+  transform: skewX(12deg);
+}
+.story__caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 80%);
+  color: var(--color-white);
+  font-size: 2rem;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.5s;
+  backface-visibility: hidden;
+}
+.story:hover .story__caption {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+.story:hover .story__img {
+  transform: translateX(-4rem) scale(1);
+  filter: blur(3px) brightness(90%);
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.15;
+}
+.bg-video__content {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -460,6 +526,21 @@ body {
   margin-top: -20rem;
   padding: 30rem 20rem 20rem;
   background-color: var(--color-grey-light-1);
+}
+
+.section-stories {
+  height: 120rem;
+  position: relative;
+}
+.section-stories__container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 15rem 30rem;
+  font-size: var(--default-font-size);
 }
 
 /*# sourceMappingURL=style.css.map */

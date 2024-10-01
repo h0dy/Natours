@@ -32,3 +32,22 @@
   padding: 30rem 20rem 20rem;
   background-color: var(--color-grey-light-1);
 }
+
+.section-stories {
+  height: 120rem;
+  position: relative;
+
+  &__container {
+    
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 15rem 30rem;
+    
+    // background-color: var(--color-grey-light-2);
+    font-size: var(--default-font-size);
+  }
+}
