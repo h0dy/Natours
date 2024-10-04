@@ -12,12 +12,12 @@
     top: 6rem;
     right: 6rem;
     z-index: 3;
-    box-shadow: 0 1rem 3rem rgba($color: #000000, $alpha: 0.3);
+    box-shadow: 0 .5rem 1rem rgba($color: #000000, $alpha: 0.3);
     text-align: center;
     cursor: pointer;
     transition: all 0.2s;
     &:hover {
-      box-shadow: 0 1rem 3.5rem rgba($color: #000000, $alpha: 0.4);
+      box-shadow: 0 .5rem 1.5rem rgba($color: #000000, $alpha: 0.4);
     }
   }
   &__background {
