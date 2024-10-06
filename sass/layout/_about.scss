@@ -2,11 +2,23 @@
   display: flex;
   justify-content: space-evenly;
   padding: 0 20rem;
+  @media only screen and (max-width: 1600px) {
+    padding: 0 10rem;
+  }
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
   &__about {
     flex: 0 0 35%;
+    @include respond(tab-port) {
+      flex: 0 0 50rem;
+    }
   }
   &__img {
     flex: 0 0 35%;
-    
+    @include respond(tab-port) {
+      flex: 0 0 50rem;
+      z-index: 1;
+    }
   }
 }
